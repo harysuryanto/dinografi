@@ -1,6 +1,6 @@
 # Dinografi
 ## Description
-Dinografi is an encryption and decryption app. There are two option availabel to chose, Polyalphabetic Cipher or Block Cipher. It is running on Android.
+Dinografi is an app that can encrypt and decrypt a text. There are two options availabel to chose, Polyalphabetic Cipher or Block Cipher. It is running on Android. It is developed by [Hary Suryanto](https://www.instagram.com/harysuryanto_) (me) and [Affifah Jayanthi](https://www.instagram.com/affifah.jynthi) (my friend)
 
 ## Screenshots
 ### Home
