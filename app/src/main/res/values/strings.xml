@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dinografi</string>
+
+    <string-array name="jenis_kriptografi">
+        <item>Polyalphabetic Cipher</item>
+        <item>Block Cipher</item>
+    </string-array>
+</resources>

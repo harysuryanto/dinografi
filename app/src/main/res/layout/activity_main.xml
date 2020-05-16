@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDF1F7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/dinosaur_drawing"/>
+
+        <TextView
+            android:id="@+id/textLogo"
+            android:fontFamily="@font/fredoka"
+            android:textColor="#17103E"
+            android:textSize="26sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinografi" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/textTitle"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="#17103E"
+                android:textSize="23sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Securing Data" />
+
+            <TextView
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:id="@+id/textSubTitle"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="#B4BAC3"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your data is everything" />
+
+            <LinearLayout
+                android:id="@+id/llEncrypt"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/bgitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/locked"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/textItemOne"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="#17103E"
+                        android:textSize="28sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Encrypt" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDecrypt"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/bgitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/unlocked"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/textItemTwo"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="#17103E"
+                        android:textSize="28sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Decrypt" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSavedCryptography"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/bgitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/reading"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/textItemThree"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="#17103E"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saved Cryptographys" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--<Button
+                android:id="@+id/textBtn"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:paddingBottom="35dp"
+                android:textSize="22sp"
+                android:textColor="#FFF"
+                android:text="Request Features"
+                android:background="@drawable/bgbtn"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF1F7"
+    tools:context=".EncryptActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/dinosaur_drawing"/>
+
+            <TextView
+                android:id="@+id/textLogo"
+                android:fontFamily="@font/fredoka"
+                android:textColor="#17103E"
+                android:textSize="26sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dinografi" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/textTitle"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="#17103E"
+            android:textSize="23sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encrypt" />
+
+        <TextView
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/textSubTitle"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="#B4BAC3"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It hides your data" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgitem"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/spinnerJenisKriptografi"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/textPlain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Plain"
+                android:textAlignment="center"
+                android:inputType="text" />
+
+            <!--<TextView
+                android:id="@+id/textPlainInBinary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Plain text in binary"
+                android:textAlignment="center" />-->
+
+            <EditText
+                android:id="@+id/textKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Key"
+                android:textAlignment="center"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textCipher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:hint="Cipher"
+                android:text=""
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:weightSum="2.0">
+
+
+                <!--<TextView
+                    android:id="@+id/textCipherInBinary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cipher text in binary"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/textCipher" />-->
+
+                <Button
+                    android:id="@+id/buttonEncrypt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Encrypt"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/locked_small"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    android:layout_weight=".5"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/save"
+                    app:layout_constraintTop_toBottomOf="@id/buttonEncrypt"
+                    app:layout_constraintLeft_toLeftOf="@id/buttonEncrypt"
+                    app:layout_constraintRight_toLeftOf="@id/buttonCopy" />
+
+                <Button
+                    android:id="@+id/buttonCopy"
+                    android:layout_weight=".5"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Copy Cipher"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/copy"
+                    app:layout_constraintTop_toBottomOf="@id/buttonEncrypt"
+                    app:layout_constraintRight_toRightOf="@id/buttonEncrypt"
+                    app:layout_constraintLeft_toRightOf="@id/buttonSave" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
