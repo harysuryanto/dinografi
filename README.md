@@ -13,4 +13,4 @@ Dinografi is an app that can encrypt and decrypt a text. There are two options a
 ![Decryption](https://i.ibb.co/37K5wcs/dec.jpg)
 
 ## Known bug
-The app will be forced close if we tap the SAVE button.
+The SAVE button will make the app crash if we tap it.
